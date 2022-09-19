@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 const WatchList = (props) => {
   let cardId = localStorage.getItem("cardId");
@@ -35,13 +36,13 @@ const WatchList = (props) => {
         className="container my-4 watchDiv"
         style={{ width: "20rem", height: "30rem", border: "1px solid gray" }}
       >
-        {cardId ? (
-          <div className="card my-2">
+        {cardId > 0 ? (
+          <div className="card my-2" style={{ backgroundColor: "#6e7a31" }}>
             <img
               className="card-img-top"
               src={watchListData[0]?.images.jpg.image_url}
               alt="animes.jpg"
-              height="350rem"
+              height="290rem"
             />
             <div className="card-body">
               <h5 className="card-title text-white">
@@ -49,6 +50,16 @@ const WatchList = (props) => {
               </h5>
               <p className="card-text text-white">{watchListData[0]?.rating}</p>
             </div>
+            <NavLink
+              to={{
+                pathname: "/detail",
+              }}
+              state={{ id: props.id, list: props.animesList }}
+            >
+              <button type="button" className="btn btn-info m-2">
+                More Details
+              </button>
+            </NavLink>
           </div>
         ) : (
           <></>
