@@ -1,0 +1,9 @@
+.cardBox {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+.myCard {
+  position: relative;
+  justify-content: center;
+}
