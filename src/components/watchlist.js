@@ -35,7 +35,7 @@ const WatchList = (props) => {
         className="container my-4 watchDiv"
         style={{ width: "20rem", height: "30rem", border: "1px solid gray" }}
       >
-        {cardId > 1 ? (
+        {cardId ? (
           <div className="card my-2">
             <img
               className="card-img-top"
