@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/animes/static/css/main.45aa4f87.css",
+    "main.js": "/animes/static/js/main.92948779.js",
+    "index.html": "/animes/index.html",
+    "main.45aa4f87.css.map": "/animes/static/css/main.45aa4f87.css.map",
+    "main.92948779.js.map": "/animes/static/js/main.92948779.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45aa4f87.css",
+    "static/js/main.92948779.js"
+  ]
+}
