@@ -54,7 +54,7 @@ const WatchList = (props) => {
               to={{
                 pathname: "/detail",
               }}
-              state={{ id: props.id, list: props.animesList }}
+              state={{ id: Number(cardId), list: props.animesList }}
             >
               <button type="button" className="btn btn-info m-2">
                 More Details
