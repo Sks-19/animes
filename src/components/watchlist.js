@@ -35,18 +35,24 @@ const WatchList = (props) => {
         className="container my-4 watchDiv"
         style={{ width: "20rem", height: "30rem", border: "1px solid gray" }}
       >
-        <div className="card my-2">
-          <img
-            className="card-img-top"
-            src={watchListData[0]?.images.jpg.image_url}
-            alt="animes.jpg"
-            height="350rem"
-          />
-          <div className="card-body">
-            <h5 className="card-title text-white">{watchListData[0]?.title}</h5>
-            <p className="card-text text-white">{watchListData[0]?.rating}</p>
+        {cardId > 1 ? (
+          <div className="card my-2">
+            <img
+              className="card-img-top"
+              src={watchListData[0]?.images.jpg.image_url}
+              alt="animes.jpg"
+              height="350rem"
+            />
+            <div className="card-body">
+              <h5 className="card-title text-white">
+                {watchListData[0]?.title}
+              </h5>
+              <p className="card-text text-white">{watchListData[0]?.rating}</p>
+            </div>
           </div>
-        </div>
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );
