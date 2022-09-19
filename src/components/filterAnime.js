@@ -65,7 +65,6 @@ const FilteredAnimes = ({ animesList, setAnimesList }) => {
                   className="form-check-input"
                   type="checkbox"
                   name={data.name}
-                  //   checked={data?.isChecked || false}
                   onChange={handleChange}
                   id="checkbox"
                 />
