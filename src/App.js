@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import Home from "./components/home";
 import Searchform from "./components/form";
 import WatchList from "./components/watchlist";
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
       <div
-        className="container"
+        className="container-fluid"
         style={{ textAlign: "center", backgroundColor: "#414016" }}
       >
         <h1 className="text-danger">Animes List</h1>

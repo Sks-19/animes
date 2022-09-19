@@ -9,7 +9,10 @@ const DetailPage = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: "#414016" }}>
+      <div
+        className="container-fluid"
+        style={{ height: "97vh", backgroundColor: "#414016" }}
+      >
         <h1 className="my-4 text-white" style={{ textAlign: "center" }}>
           {details[0].title}
         </h1>
