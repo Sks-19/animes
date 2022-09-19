@@ -29,7 +29,6 @@ const FilteredAnimes = ({ animesList, setAnimesList }) => {
   };
 
   const handleFilter = () => {
-    console.log("data", checkedAnime, checkedAnime.length);
     document.querySelector(".dropdown-content").style.display = "none";
     const filteredData = animesList.filter((val) => {
       const matchedData = val.genres.map((genres) => {
