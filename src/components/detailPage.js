@@ -9,7 +9,7 @@ const DetailPage = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ backgroundColor: "#414016" }}>
         <h1 className="my-4" style={{ textAlign: "center" }}>
           {details[0].title}
         </h1>

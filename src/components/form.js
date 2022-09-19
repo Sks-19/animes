@@ -1,16 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Searchform = ({ setSearchItem }) => {
-  //   const [searchItem, setSearchItem] = useState("");
-
-  //   const filteredAnimes = animesList.data?.filter((animes) => {
-  //     if (searchItem === "") {
-  //       return animes;
-  //     } else if (animes.title.toLowerCase().includes(searchItem.toLowerCase())) {
-  //       return animes;
-  //     }
-  //   });
-
   return (
     <>
       <form>

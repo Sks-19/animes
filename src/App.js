@@ -26,7 +26,10 @@ function App() {
 
   return (
     <>
-      <div className="container" style={{ textAlign: "center" }}>
+      <div
+        className="container"
+        style={{ textAlign: "center", backgroundColor: "#414016" }}
+      >
         <h1 className="text-primary">Animes List</h1>
         <div className="row">
           <div className="col col-2">

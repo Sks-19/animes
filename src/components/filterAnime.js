@@ -50,10 +50,10 @@ const FilteredAnimes = ({ animesList, setAnimesList }) => {
 
   return (
     <>
-      <div className="dropdown" style={{ float: "right" }}>
+      <div className="dropdown">
         <button
           type="button"
-          className="btn btn-primary dropdownbtn"
+          className="btn btn-primary dropdownbtn mx-2"
           onClick={showFilter}
         >
           Filter
