@@ -53,7 +53,7 @@ const FilteredAnimes = ({ animesList, setAnimesList }) => {
       <div className="dropdown">
         <button
           type="button"
-          className="btn btn-primary dropdownbtn mx-2"
+          className="btn btn-primary dropdownbtn mx-1"
           onClick={showFilter}
         >
           Filter

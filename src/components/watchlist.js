@@ -27,7 +27,7 @@ const WatchList = (props) => {
 
   return (
     <>
-      <h1>WatchList</h1>
+      <h1 className="text-white py-2">WatchList</h1>
       <div
         onDrop={drop}
         onDragOver={dragOver}
@@ -43,8 +43,8 @@ const WatchList = (props) => {
             height="350rem"
           />
           <div className="card-body">
-            <h5 className="card-title">{watchListData[0]?.title}</h5>
-            <p className="card-text">{watchListData[0]?.rating}</p>
+            <h5 className="card-title text-white">{watchListData[0]?.title}</h5>
+            <p className="card-text text-white">{watchListData[0]?.rating}</p>
           </div>
         </div>
       </div>

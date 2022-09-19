@@ -9,8 +9,8 @@ const DetailPage = () => {
 
   return (
     <>
-      <div className="container" style={{ backgroundColor: "#414016" }}>
-        <h1 className="my-4" style={{ textAlign: "center" }}>
+      <div style={{ backgroundColor: "#414016" }}>
+        <h1 className="my-4 text-white" style={{ textAlign: "center" }}>
           {details[0].title}
         </h1>
         <div className="row">
@@ -34,7 +34,7 @@ const DetailPage = () => {
               <p className="text-success">
                 Total Episodes : {details[0].episodes}
               </p>
-              <p>
+              <p className="text-white">
                 Aired Date :{" "}
                 <b>
                   {details[0].aired.prop.from.day}-
@@ -52,7 +52,10 @@ const DetailPage = () => {
             </div>
           </div>
         </div>
-        <div className="mx-4 px-4 my-2" style={{ textAlign: "center" }}>
+        <div
+          className="mx-4 px-4 my-2 text-white"
+          style={{ textAlign: "center" }}
+        >
           <p>{details[0].synopsis}</p>
         </div>
       </div>

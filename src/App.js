@@ -30,7 +30,7 @@ function App() {
         className="container"
         style={{ textAlign: "center", backgroundColor: "#414016" }}
       >
-        <h1 className="text-primary">Animes List</h1>
+        <h1 className="text-danger">Animes List</h1>
         <div className="row">
           <div className="col col-2">
             <FilteredAnimes
@@ -43,7 +43,7 @@ function App() {
           </div>
         </div>
         <WatchList animesList={animesList} />
-        <h1>Main List</h1>
+        <h1 className="text-white">Main List</h1>
         {searchedAnimes?.map((anime) => {
           return (
             <Home
